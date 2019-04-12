@@ -1,0 +1,151 @@
+html,
+body {
+  overflow: hidden;
+  height: 100%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#home {
+  height: 100%;
+}
+#home .bg-img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+#home .bg-img .overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  opacity: .8;
+  background: #1C1D21;
+}
+#home .home-wrapper {
+  height: 100%;
+}
+#home .home-wrapper .container {
+  color: #fff;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+#home .home-wrapper .container h1 {
+  font-size: 80px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+#home .home-wrapper .container p {
+  text-align: center;
+  font-size: 16px;
+}
+#home .home-wrapper .container .home-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#home .home-wrapper .container .icon {
+  border: 70px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 0px 50px 135px rgba(255, 255, 255, 0.1), 0px 0px 50px 135px rgba(255, 255, 255, 0.1) inset;
+  height: 450px;
+  width: 450px;
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  border-radius: 50%;
+  animation: zhuan 50s linear infinite ;
+}
+#home .home-wrapper .container .icon:hover {
+  animation-play-state: paused;
+}
+#home .home-wrapper .container .icon:hover a {
+  animation-play-state: paused;
+}
+#home .home-wrapper .container .icon a {
+  position: absolute;
+  height: 70px;
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  text-decoration: none;
+  animation: dong 1s infinite alternate,myzhuan 50s linear infinite;
+}
+#home .home-wrapper .container .icon a::before {
+  font-size: 30px;
+}
+#home .home-wrapper .container .icon a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+#home .home-wrapper .container .icon .icon-weibo {
+  bottom: -15px;
+  right: -15px;
+}
+#home .home-wrapper .container .icon .icon-github {
+  bottom: -15px;
+  left: -15px;
+}
+#home .home-wrapper .container .icon .icon-csdn {
+  top: -15px;
+  left: -15px;
+}
+#home .home-wrapper .container .icon .icon-juejin {
+  top: -15px;
+  right: -15px;
+}
+#home .home-wrapper .container .icon .icon-QQ {
+  left: 0;
+  top: 50%;
+  margin-top: -35px;
+  margin-left: -70px;
+}
+#home .home-wrapper .container .icon .icon-xingzhuang {
+  right: 0;
+  top: 50%;
+  margin-top: -35px;
+  margin-right: -70px;
+}
+#home .home-wrapper .container .icon .icon-email {
+  top: 0;
+  left: 50%;
+  margin-top: -70px;
+  margin-left: -35px;
+}
+#home .home-wrapper .container .icon .icon-jianli {
+  bottom: 0;
+  left: 50%;
+  margin-left: -35px;
+  margin-bottom: -70px;
+}
+@keyframes zhuan {
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+@keyframes myzhuan {
+  to {
+    transform: rotateZ(-360deg);
+  }
+}
+@keyframes dong1 {
+  to {
+    box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.1), 0px 0px 10px 0px rgba(255, 255, 255, 0.1) inset;
+  }
+}
+@keyframes dong {
+  to {
+    box-shadow: 0px 0px 10px 0px #fff, 0px 0px 10px 0px #fff inset;
+  }
+}
