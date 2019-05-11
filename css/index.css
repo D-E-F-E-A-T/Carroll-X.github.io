@@ -62,7 +62,7 @@ body {
   justify-content: space-around;
   margin: 0 auto;
   border-radius: 50%;
-  animation: zhuan 50s linear infinite ;
+  animation: zhuan 50s linear infinite;
 }
 #home .home-wrapper .container .icon:hover {
   animation-play-state: paused;
@@ -70,8 +70,13 @@ body {
 #home .home-wrapper .container .icon:hover a {
   animation-play-state: paused;
 }
+#home .home-wrapper .container .icon:hover a i {
+  animation-play-state: paused;
+}
 #home .home-wrapper .container .icon a {
   position: absolute;
+  top: 50%;
+  margin-top: -35px;
   height: 70px;
   width: 70px;
   display: flex;
@@ -81,7 +86,6 @@ body {
   border: 2px solid #fff;
   border-radius: 50%;
   text-decoration: none;
-  animation: dong 1s infinite alternate,myzhuan 50s linear infinite;
 }
 #home .home-wrapper .container .icon a::before {
   font-size: 30px;
@@ -89,54 +93,121 @@ body {
 #home .home-wrapper .container .icon a:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
+#home .home-wrapper .container .icon .weibo {
+  transform: rotateZ(0deg) translateX(200px);
+  animation: dong 1s infinite alternate;
+}
+#home .home-wrapper .container .icon .github {
+  transform: rotateZ(45deg) translateX(200px);
+  animation: dong 1s infinite alternate;
+}
+#home .home-wrapper .container .icon .csdn {
+  transform: rotateZ(90deg) translateX(200px);
+  animation: dong 1s infinite alternate;
+}
+#home .home-wrapper .container .icon .juejin {
+  transform: rotateZ(135deg) translateX(200px);
+  animation: dong 1s infinite alternate;
+}
+#home .home-wrapper .container .icon .QQ {
+  transform: rotateZ(180deg) translateX(200px);
+  animation: dong 1s infinite alternate;
+}
+#home .home-wrapper .container .icon .zhihu {
+  transform: rotateZ(225deg) translateX(200px);
+  animation: dong 1s infinite alternate;
+}
+#home .home-wrapper .container .icon .email {
+  transform: rotateZ(270deg) translateX(200px);
+  animation: dong 1s infinite alternate;
+}
+#home .home-wrapper .container .icon .jianli {
+  transform: rotateZ(315deg) translateX(200px);
+  animation: dong 1s infinite alternate;
+}
 #home .home-wrapper .container .icon .icon-weibo {
-  bottom: -15px;
-  right: -15px;
+  font-size: 26px;
+  transform: rotateZ(0deg);
+  animation: myzhuan1 50s linear infinite;
 }
 #home .home-wrapper .container .icon .icon-github {
-  bottom: -15px;
-  left: -15px;
+  font-size: 26px;
+  transform: rotateZ(-45deg);
+  animation: myzhuan2 50s linear infinite;
 }
 #home .home-wrapper .container .icon .icon-csdn {
-  top: -15px;
-  left: -15px;
+  font-size: 26px;
+  transform: rotateZ(-90deg);
+  animation: myzhuan3 50s linear infinite;
 }
 #home .home-wrapper .container .icon .icon-juejin {
-  top: -15px;
-  right: -15px;
+  font-size: 26px;
+  transform: rotateZ(-135deg);
+  animation: myzhuan4 50s linear infinite;
 }
 #home .home-wrapper .container .icon .icon-QQ {
-  left: 0;
-  top: 50%;
-  margin-top: -35px;
-  margin-left: -70px;
+  font-size: 26px;
+  transform: rotateZ(-180deg);
+  animation: myzhuan5 50s linear infinite;
 }
 #home .home-wrapper .container .icon .icon-zhihu {
-  right: 0;
-  top: 50%;
-  margin-top: -35px;
-  margin-right: -70px;
+  font-size: 26px;
+  transform: rotateZ(-225deg);
+  animation: myzhuan6 50s linear infinite;
 }
 #home .home-wrapper .container .icon .icon-email {
-  top: 0;
-  left: 50%;
-  margin-top: -70px;
-  margin-left: -35px;
+  font-size: 26px;
+  transform: rotateZ(-270deg);
+  animation: myzhuan7 50s linear infinite;
 }
 #home .home-wrapper .container .icon .icon-jianli {
-  bottom: 0;
-  left: 50%;
-  margin-left: -35px;
-  margin-bottom: -70px;
+  font-size: 26px;
+  transform: rotateZ(-315deg);
+  animation: myzhuan8 50s linear infinite;
 }
 @keyframes zhuan {
   to {
     transform: rotateZ(360deg);
   }
 }
-@keyframes myzhuan {
+@keyframes myzhuan1 {
   to {
     transform: rotateZ(-360deg);
+  }
+}
+@keyframes myzhuan2 {
+  to {
+    transform: rotateZ(-405deg);
+  }
+}
+@keyframes myzhuan3 {
+  to {
+    transform: rotateZ(-450deg);
+  }
+}
+@keyframes myzhuan4 {
+  to {
+    transform: rotateZ(-495deg);
+  }
+}
+@keyframes myzhuan5 {
+  to {
+    transform: rotateZ(-540deg);
+  }
+}
+@keyframes myzhuan6 {
+  to {
+    transform: rotateZ(-585deg);
+  }
+}
+@keyframes myzhuan7 {
+  to {
+    transform: rotateZ(-630deg);
+  }
+}
+@keyframes myzhuan8 {
+  to {
+    transform: rotateZ(-675deg);
   }
 }
 @keyframes dong1 {
